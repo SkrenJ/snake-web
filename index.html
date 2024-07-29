@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Snake Game with Bootstrap</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <style>
+        td {
+            border: 2px solid darkolivegreen;
+            height: 30px;
+            width: 30px;
+        }
+        table {
+            border-collapse: collapse;
+        }
+        .snake-body {
+            background-color: green;
+        }
+        .food {
+            background-color: red;
+        }
+        .game-board-container {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container text-center">
+        <h1 class="my-4">Snake Game</h1>
+
+        <div class="btn-group mb-3" role="group" aria-label="Game controls">
+            <button type="button" class="btn btn-success" onclick="startGame()">Start</button>
+            <button type="button" class="btn btn-warning" onclick="pauseGame()">Pause</button>
+            <button type="button" class="btn btn-danger" onclick="restartGame()">Restart</button>
+        </div>
+
+        <div id="game-container" class="game-board-container">
+            <table id="game-board"></table>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>

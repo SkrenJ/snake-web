@@ -1,0 +1,19 @@
+td {
+    border: 2px solid darkolivegreen;
+    height: 30px;
+    width: 30px;
+    
+}
+
+table {
+    border-collapse:collapse;
+
+}
+
+.snake-body {
+    background-color: green;
+}
+
+.food {
+    background-color: red;
+}
